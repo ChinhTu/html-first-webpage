@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./CSS/style-register.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header-area">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="logo" width="120" height="74">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="justify-content: end;">
+            <div class="navbar-nav" id="nav-area">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Subdivisions</a>
+              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link active" id="active-link" style="background-image: linear-gradient(to bottom, blue, green, #f2f2f2);">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+  <!-- main -->
+    <div class="row mb-3">
+      <div class="col-auto">
+        <h2>Register</h2>
+      </div>
+    </div>
+
+    <form action="./homepage.html" autocomplete="on">
+      <div class="row mb-3">
+        <label for="full-name" class="col-sm-2 col-form-label">Full name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="full-name" placeholder="Enter your full name" required autofocus style="width: 400px;" tabindex="1">
+        </div>
+      </div>
+
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+        <div class="col-sm-2">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" tabindex="2">
+            <label class="form-check-label" for="gridRadios1">
+              Male
+            </label>
+          </div> 
+        </div>
+
+        <div class="col-sm-2" >
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+            <label class="form-check-label" for="gridRadios1">
+              Female
+            </label>
+          </div> 
+        </div>
+      </fieldset>
+      
+      <div class="row mb-3">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required autofocus style="width: 400px;" tabindex="3">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="inputUsername" class="col-sm-2 col-form-label">User name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputUsername" placeholder="Enter user name" required autofocus style="width: 400px;" tabindex="4">
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password" required autofocus minlength="9" style="width: 400px;" tabindex="5">
+        </div>
+      </div>
+      
+      <div class="row mb-2">
+        <div class="col-sm-3" id="submit-but">
+          <button type="submit" class="btn" style="background-color: #fff;">Submit</button>
+        </div>
+
+        <div class="col-sm-2" id="submit-but">
+          <button type="button" class="btn" style="background-color: #fff;">Cancel</button>
+        </div>
+      </div>
+    </form>
+
+    <!-- foot -->
+    <footer>
+      <div class="row">
+        <div class="col-6 gx-5">
+          <p>© 2023 Tree Valley. All Right Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
